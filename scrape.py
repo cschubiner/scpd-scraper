@@ -118,7 +118,6 @@ def downloadAllLectures(username, courseName, password, downloadSettings):
     for link in links:
         try:
             response = br.open(link)
-            # response = br.open('https://myvideosu.stanford.edu/player/slplayer.aspx?coll=6d44dcc5-9136-42ab-a0fa-1475fcbfa463&course=CS140&co=66ce29bd-4bbc-4cb0-b166-8589ebb14e60&lecture=120924&authtype=WA&wmp=true')
             soup = BeautifulSoup(response.read())
         except:
             print '\n'
